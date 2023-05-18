@@ -1,45 +1,34 @@
-import { Grid, TextField } from "@mui/material";
+import { TextField } from "@mui/material";
 import { StyledLogin } from "./styles";
 
-const FormLogin = () => {
+const FormLogin = ({ formik }) => {
   return (
     <StyledLogin>
-      <Grid  spacing={2} marginTop={2}>
-        {/*<Grid xs={12} sm={6} item>*/}
-          <TextField
-            id="firstName"
-            type="text"
-            label="Username"
-            fullWidth
-            margin="dense"
-            //value={formik.values.firstName}
-            //onBlur={formik.handleBlur}
-            //onChange={formik.handleChange}
-            //error={!!formik.touched.firstName && !!formik.errors.firstName}
-            //helperText={
-            //  formik.touched.firstName &&
-            //  ((t(formik.errors.firstName) ?? '') as string)
-          />
-        {/*</Grid>*/}
-        {/*<Grid xs={12} sm={6} item>*/}
-          <TextField
-            id="firstName"
-            type="text"
-            label="Username"
-            fullWidth
-            margin="dense"
-            //value={formik.values.firstName}
-            //onBlur={formik.handleBlur}
-            //onChange={formik.handleChange}
-            //error={!!formik.touched.firstName && !!formik.errors.firstName}
-            //helperText={
-            //  formik.touched.firstName &&
-            //  ((t(formik.errors.firstName) ?? '') as string)
-          />
-        {/*</Grid>*/}
-      </Grid>
+      <TextField
+        id="username"
+        type="text"
+        label="Username"
+        fullWidth
+        margin="dense"
+        value={formik.values.username}
+        onBlur={formik.handleBlur}
+        onChange={formik.handleChange}
+        error={!!formik.touched.username && !!formik.errors.username}
+        helperText={formik.touched.username && formik.errors.username}
+      />
+      <TextField
+        id="password"
+        type="text"
+        label="Password"
+        fullWidth
+        margin="dense"
+        value={formik.values.password}
+        onBlur={formik.handleBlur}
+        onChange={formik.handleChange}
+        error={!!formik.touched.password && !!formik.errors.password}
+        helperText={formik.touched.password}
+      />
     </StyledLogin>
   );
 };
-
 export default FormLogin;

@@ -1,11 +1,13 @@
+import { Typography } from "@mui/material";
+import { StyledForm } from "./styles";
 
-
-const FormContainer = () => {
+const FormContainer = ({ onSubmit, children, title }) => {
   return (
-    <div>
-      
-    </div>
+    <StyledForm onSubmit={onSubmit}>
+      <Typography variant="h5">{title}</Typography>
+      {children}
+    </StyledForm>
   );
-}
+};
 
 export default FormContainer;

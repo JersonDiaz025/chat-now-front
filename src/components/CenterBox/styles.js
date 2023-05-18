@@ -5,9 +5,9 @@ export const StyledCenterBox = styled(Box)(({ theme }) => ({
   justifyContent: 'center',
   alignItems: 'center',
   width: '100%',
-  minHeight: '100vh',
+  minHeight: '100%',
   overflowX: 'hidden',
-  backgroundColor: 'gray',
+  //backgroundColor: 'gray',
   [theme.breakpoints.down('sm')]: {
     height: "auto",
     width: '100%',  
