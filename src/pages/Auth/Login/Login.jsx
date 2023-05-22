@@ -1,32 +1,36 @@
-import useLogin from "./use-auth";
+import { useAuth } from "../../../hooks/index";
+import { auth } from "../../../constants/index";
 import FormLogin from "../FormLogin/FormLogin";
 import { Typography } from "@mui/material";
 import {
   CenterBox,
   FormContainer,
   SubmitButton,
-  NavLink
+  NavLink,
+  CardContainerForm,
 } from "../../../components/index";
-import { StyledCardContainer } from "./styles";
 
 const Login = () => {
-  const { formik } = useLogin();
+  const { loading, formik } = useAuth({ pathname: auth?.LOGIN });
   return (
     <CenterBox>
-      <StyledCardContainer>
-        <FormContainer onSubmit={formik?.handleSubmit} title="Sign in">
+      <CardContainerForm>
+        <FormContainer onSubmit={formik.handleSubmit} title="Iniciar sesión">
           <FormLogin formik={formik} />
           <SubmitButton
             isDisabled={!(formik.dirty && formik.isValid)}
             isSubmitting={formik.isSubmitting}
             messages={{
               default: "Iniciar sesion",
-              submitting: "Iniciando",
+              submitting: loading && "Iniciando",
             }}
           />
-          <NavLink to="/register" text={<Typography>{"Don't have an account?"}</Typography>} />
+          <NavLink
+            to={`/${auth.REGISTER}`}
+            text={<Typography>{"No tienes una cuenta?"}</Typography>}
+          />
         </FormContainer>
-      </StyledCardContainer>
+      </CardContainerForm>
     </CenterBox>
   );
 };

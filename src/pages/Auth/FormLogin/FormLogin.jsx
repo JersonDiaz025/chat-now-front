@@ -7,26 +7,26 @@ const FormLogin = ({ formik }) => {
       <TextField
         id="username"
         type="text"
-        label="Username"
+        label="Usuario"
         fullWidth
         margin="dense"
         value={formik.values.username}
         onBlur={formik.handleBlur}
         onChange={formik.handleChange}
         error={!!formik.touched.username && !!formik.errors.username}
-        helperText={formik.touched.username && formik.errors.username}
+        helperText={formik.touched?.username && formik.errors.username}
       />
       <TextField
         id="password"
         type="text"
-        label="Password"
+        label="Contraseña"
         fullWidth
         margin="dense"
         value={formik.values.password}
         onBlur={formik.handleBlur}
         onChange={formik.handleChange}
         error={!!formik.touched.password && !!formik.errors.password}
-        helperText={formik.touched.password}
+        helperText={formik.touched.password && formik.errors.password}
       />
     </StyledLogin>
   );

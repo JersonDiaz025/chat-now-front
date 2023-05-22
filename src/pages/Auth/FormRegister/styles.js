@@ -8,8 +8,11 @@ export const StyledRegister = styled(Box)(({ theme }) => ({
   justifyContent: 'center',
   alignItems: 'center',
   flexDirection: 'column',
-  //[theme.breakpoints.down('sm')]: {
-  //  margin: theme.spacing(1),
-  //  height: "100%",
-  //}
+
+  [theme.breakpoints.down('sm')]: {
+    //margin: 1,
+    width: '100%',
+    padding: 1,
+    height: "100%",
+  }
 }));

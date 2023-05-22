@@ -1,8 +1,8 @@
-import { Box, Paper, styled } from "@mui/material";
+import { Box, styled } from "@mui/material";
 
 export const StyledCardContainer = styled(Box)(({ theme }) => ({
-  //marginTop: 2,
-  padding: 8,
+  //marginTop: theme.spacing(9),
+  padding: theme.spacing(2),
   display: "flex",
   flexDirection: "column",
   alignItems: "center",

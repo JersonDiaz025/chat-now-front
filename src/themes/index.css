@@ -1,0 +1,70 @@
+/* Fix app layout */
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Remove default anchors styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Custom fonts */
+@font-face {
+  font-family: 'DIN 1451 Mittelschrift';
+  src: url('/fonts/din1451alt.ttf');
+}
+
+@font-face {
+  font-family: 'CynthoNext';
+  font-weight: 100;
+  src: url('/fonts/CynthoNextThin.otf');
+}
+
+@font-face {
+  font-family: 'CynthoNext';
+  font-weight: 200;
+  src: url('/fonts/CynthoNextExtraLight.otf');
+}
+
+@font-face {
+  font-family: 'CynthoNext';
+  font-weight: 300;
+  src: url('/fonts/CynthoNextLight.otf');
+}
+
+@font-face {
+  font-family: 'CynthoNext';
+  font-weight: 400;
+  src: url('/fonts/CynthoNextRegular.otf');
+}
+
+@font-face {
+  font-family: 'CynthoNext';
+  font-weight: 500;
+  src: url('/fonts/CynthoNextMedium.otf');
+}
+
+@font-face {
+  font-family: 'CynthoNext';
+  font-weight: 600;
+  src: url('/fonts/CynthoNextSemiBold.otf');
+}
+
+@font-face {
+  font-family: 'CynthoNext';
+  font-weight: 700;
+  src: url('/fonts/CynthoNextBold.otf');
+}
+
+@font-face {
+  font-family: 'CynthoNext';
+  font-weight: 900;
+  src: url('/fonts/CynthoNextExtraBold.otf');
+}
