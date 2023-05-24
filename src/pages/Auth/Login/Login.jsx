@@ -11,7 +11,9 @@ import {
 } from "../../../components/index";
 
 const Login = () => {
-  const { loading, formik } = useAuth({ pathname: auth?.LOGIN });
+  const { message, msgError, loading, formik } = useAuth({ pathname: auth?.LOGIN });
+
+  console.log({message, msgError, loading})
   return (
     <CenterBox>
       <CardContainerForm>
