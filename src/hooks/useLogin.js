@@ -16,15 +16,13 @@ function useLogin() {
 
   // Login user this app
   async function login(endpoint, data) {
-    console.log('no envia')
     setLoading(true);
     setMsgError(null);
     try {
       const response = await apiService.post(endpoint, data);
       const { token, user } = response;
       setMessage(response.message);
-      if (response?.user && setLocalStorage(response.token)) {
-        dispatch(signInUser({ token, user }));
+      if (user && setLocalStorage(user)) {
         navigate(`/${auth.HOME}`);
       }
     } catch (error) {

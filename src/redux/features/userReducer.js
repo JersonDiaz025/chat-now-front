@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { getUserToken } from "../../utils/index";
 
 const initialState = {
-  isLoggedIn: !getUserToken(),
+  isLoggedIn: getUserToken() === true,
   //token: "",
   userData: null,
 };
@@ -13,7 +13,7 @@ export const userStateSlice = createSlice({
   reducers: {
     signInUser: (state, action) => {
       const { user } = action.payload;
-      state.isLoggedIn = getUserToken();
+      state.isLoggedIn = getUserToken() === true;
       //state.token = token;
       state.userData = user;
     },
