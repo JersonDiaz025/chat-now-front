@@ -1,11 +1,11 @@
 import apiHandler from "../utils/axios";
 
 const apiService = {
-  async setAuthToken(token) {
+  setAuthToken(token) {
     apiHandler.defaults.headers.common["Authorization"] = `Bearer ${token}`;
   },
 
-  async clearAuthToken() {
+  clearAuthToken() {
     delete apiHandler.defaults.headers.common["Authorization"];
   },
 
@@ -23,7 +23,7 @@ const apiService = {
       const response = await apiHandler.post(endpoint, data);
       return response.data;
     } catch (error) {
-      return error.data;
+      return error;
     }
   },
 
