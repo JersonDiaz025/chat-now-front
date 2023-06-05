@@ -1,40 +1,58 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
+  useHref,
+  useNavigate,
 } from "react-router-dom";
 import { routes } from "../routes/routes";
 import Layout from "../Layout/Layout";
-import { useSelector } from "react-redux";
-import { auth } from "../constants/index";
+import { ROUTES } from "../constants";
+import useUser from "../hooks/useUser";
+import { useEffect } from "react";
 
-const AppRouter = () => {
-  const store = useSelector((state) => state.user);
-  console.log(store)
+function AppRouter(){
   return (
     <Router>
-      <Routes>
-        {routes?.map(
-          ({ path, component: Component, isLayout, isPrivate }, index) => (
+      <UserValidator>
+        <Routes>
+          {routes?.map(({ path, component: Component, isLayout }, index) => (
             <Route
               path={path}
               key={index}
               element={
-                isPrivate && !store.isLoggedIn ? (
-                  <Navigate to={`/${auth.LOGIN}`} replace={true} />
-                ) : (
-                  <Layout isLayout={isLayout}>
-                    <Component/>
-                  </Layout>
-                )
+                <Layout isLayout={isLayout}>
+                  <Component />
+                </Layout>
               }
             />
-          )
-        )}
-      </Routes>
+          ))}
+        </Routes>
+      </UserValidator>
     </Router>
   );
-};
+}
+
+function UserValidator({ children }) {
+  const navigate = useNavigate();
+  const href = useHref();
+  const user = useUser();
+  const currentRoute = routes.find((route) => route.path === href);
+
+  useEffect(() => {
+    if (user.isLogged) {
+      if (currentRoute.onlyUnknownUsers) {
+        navigate(ROUTES.HOME);
+      }
+    } else {
+      if (currentRoute.isPrivate) {
+        navigate(ROUTES.LOGIN);
+      }
+    }
+  }, [user, currentRoute]);
+
+  return children;
+}
 
 export default AppRouter;

@@ -1,2 +1,2 @@
-export { default as auth } from "./auth";
+export * from "./routes"
 export * from "./tokenUser";

@@ -6,12 +6,12 @@ import {
   NavLink,
 } from "../../../components/index";
 import { Typography } from "@mui/material";
-import { auth } from "../../../constants/index";
+import { ROUTES } from "../../../constants";
 import { useAuth } from "../../../hooks";
 import FormRegister from "../FormRegister/FormRegister";
 
 const Register = () => {
-  const { loading, formik } = useAuth({ pathname: auth?.REGISTER });
+  const { loading, formik } = useAuth({ pathname: ROUTES?.REGISTER });
 
   return (
     <CenterBox>
@@ -27,7 +27,7 @@ const Register = () => {
             }}
           />
           <NavLink
-            to={`/${auth.LOGIN}`}
+            to={ROUTES.LOGIN}
             text={<Typography>{"Ya tienes una cuenta?"}</Typography>}
           />
         </FormContainer>

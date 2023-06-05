@@ -1,36 +1,39 @@
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { signInUser } from "../redux/features/userReducer";
+//import { useDispatch } from "react-redux";
+//import { signInUser } from "../redux/features/userReducer";
 import { useState } from "react";
 import apiService from "../services/apiService";
-import auth from "../constants/auth";
-import { setLocalStorage } from "../utils/index";
+import { ROUTES } from "../constants";
+import useUser from "./useUser";
+//import { setLocalStorage } from "../utils/index";
 
 function useLogin() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [msgError, setMsgError] = useState(null);
-  const dispatch = useDispatch();
+  const { setUser } = useUser();
+  //const dispatch = useDispatch();
 
   const navigate = useNavigate();
 
   // Login user this app
   async function login(endpoint, data) {
+    console.log(endpoint);
     setLoading(true);
     setMsgError(null);
     try {
       const response = await apiService.post(endpoint, data);
-      const { token, user } = response;
+      const { user } = response;
       setMessage(response.message);
-      if (user && setLocalStorage(user)) {
-        navigate(`/${auth.HOME}`);
+      if (user.token) {
+        setUser(user);
+        navigate(ROUTES.HOME);
       }
     } catch (error) {
       //console.log(error?.message)
       setMsgError(error?.message);
-    } finally {
-      setLoading(false);
     }
+    setLoading(false);
   }
 
   return {

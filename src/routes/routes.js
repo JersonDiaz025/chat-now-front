@@ -1,23 +1,26 @@
 import { HomePage, Login, Register } from "../pages";
+import { ROUTES } from '../constants'
 
 export const routes = [
   {
-    path: "/home",
+    path: ROUTES.HOME,
     component: HomePage,
     isLayout: true,
     isPrivate: true
   },
   {
-    path: "/login",
+    path: ROUTES.LOGIN,
     component: Login,
     isLayout: false,
-    isPrivate: false
+    isPrivate: false,
+    onlyUnknownUsers: true
   },
   {
-    path: "/register",
+    path: ROUTES.REGISTER,
     component: Register,
     isLayout: false,
-    isPrivate: false
+    isPrivate: false,
+    onlyUnknownUsers: true
   },
   //{
   //  path: '/chats',

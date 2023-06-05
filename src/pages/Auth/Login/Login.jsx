@@ -1,5 +1,5 @@
 import { useAuth } from "../../../hooks/index";
-import { auth } from "../../../constants/index";
+import { ROUTES } from "../../../constants";
 import FormLogin from "../FormLogin/FormLogin";
 import { Typography } from "@mui/material";
 import {
@@ -11,7 +11,7 @@ import {
 } from "../../../components/index";
 
 const Login = () => {
-  const { message, msgError, loading, formik } = useAuth({ pathname: auth?.LOGIN });
+  const { message, msgError, loading, formik } = useAuth({ pathname: ROUTES?.LOGIN });
 
   console.log({message, msgError, loading})
   return (
@@ -28,7 +28,7 @@ const Login = () => {
             }}
           />
           <NavLink
-            to={`/${auth.REGISTER}`}
+            to={ROUTES.REGISTER}
             text={<Typography>{"No tienes una cuenta?"}</Typography>}
           />
         </FormContainer>
