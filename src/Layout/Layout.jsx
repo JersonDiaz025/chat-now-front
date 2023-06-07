@@ -1,9 +1,9 @@
-import { Navbar } from "../components";
+import { Navbar, Header} from "../components";
 
 const Layout = ({ isLayout, children }) => {
   return (
     <>
-      {isLayout && <Navbar />}
+      {isLayout && <Header />}
       {children}
     </>
   );

@@ -7,18 +7,22 @@ import {
   FormContainer,
   SubmitButton,
   NavLink,
+  Loader,
   CardContainerForm,
 } from "../../../components/index";
 
 const Login = () => {
   const { message, msgError, loading, formik } = useAuth({ pathname: ROUTES?.LOGIN });
 
-  console.log({message, msgError, loading})
+  if (loading) {
+    return <Loader open={loading}/>
+  }
   return (
     <CenterBox>
       <CardContainerForm>
         <FormContainer onSubmit={formik.handleSubmit} title="Iniciar sesión">
           <FormLogin formik={formik} />
+          <Typography align="left" color='red' variant="body1">{message}</Typography>
           <SubmitButton
             isDisabled={!(formik.dirty && formik.isValid)}
             isSubmitting={formik.isSubmitting}

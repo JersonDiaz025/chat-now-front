@@ -18,7 +18,6 @@ function useLogin() {
 
   // Login user this app
   async function login(endpoint, data) {
-    console.log(endpoint);
     setLoading(true);
     setMsgError(null);
     try {
