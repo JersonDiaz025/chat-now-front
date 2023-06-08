@@ -2,6 +2,7 @@ import { Box, styled } from '@mui/material';
 
 export const StyledHeader = styled(Box)(({ theme }) => ({
   display: 'flex',
+  //position: 'static',
   //justifyContent: 'center',
   //alignItems: 'center',
   //width: '100%',

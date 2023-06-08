@@ -12,7 +12,6 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import iconChat from "../../assets/icons/chat.svg";
 import useUser from "../../hooks/useUser";
-import { Button } from "@mui/material";
 const settings = ["Profile", "Account", "Logout"];
 
 const Header = () => {
@@ -29,7 +28,7 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <AppBar position="static">
+      <AppBar>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <img src={iconChat} />
@@ -42,8 +41,8 @@ const Header = () => {
                 display: { xs: "flex" },
                 flexGrow: 1,
                 fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
+                fontWeight: 600,
+                letterSpacing: ".1rem",
                 color: "white",
                 textDecoration: "none",
               }}

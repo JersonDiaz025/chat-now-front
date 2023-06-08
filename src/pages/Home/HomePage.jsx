@@ -1,13 +1,16 @@
 import useUser from "../../hooks/useUser";
+import { StyledHome } from "./styles";
+import {SidebarUsers} from "../../components";
 
 const HomePage = () => {
   const user = useUser();
 
   return (
-    <div>
-      <p></p>
-    </div>
+    <StyledHome>
+      <SidebarUsers/>
+      <p>fdgdfgfdg</p>
+    </StyledHome>
   );
-}
+};
 
 export default HomePage;
