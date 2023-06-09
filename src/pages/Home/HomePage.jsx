@@ -7,8 +7,10 @@ const HomePage = () => {
 
   return (
     <StyledHome>
-      <SidebarUsers/>
-      <p>fdgdfgfdg</p>
+      <SidebarUsers />
+      <div>
+        fdgj
+      </div>
     </StyledHome>
   );
 };

@@ -1,9 +1,10 @@
 import { StyledSidebar } from "./styles";
+import SidebarNavbar from "./SidebarNavbar/SidebarNavbar";
 
 const SidebarUsers = () => {
   return (
     <StyledSidebar>
-      sidebar
+      <SidebarNavbar/>
     </StyledSidebar>
   );
 }
