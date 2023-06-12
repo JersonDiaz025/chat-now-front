@@ -5,5 +5,6 @@ export { default as SubmitButton } from "./Button/SubmitButton";
 export { default as NavLink } from "./Link/Link";
 export { default as Header } from "./Header/Header";
 export { default as Loader } from "./Loader/Loader";
+export { default as ControlledSwitches } from "./CustomSwitch/Switch";
 export { default as SidebarUsers } from "./SidebarUsers/Sidebar";
 export { default as CardContainerForm } from "./CardContainerForm/CardContainerForm";

@@ -9,8 +9,9 @@ import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import iconChat from "../../assets/icons/chat.svg";
+import { iconChat } from "../../assets";
 import useUser from "../../hooks/useUser";
+import { ControlledSwitches } from "../index";
 
 const SENTING = ["Profile", "Account", "Logout"];
 
@@ -78,7 +79,7 @@ const Header = () => {
                   <Typography
                     textAlign="center"
                     onClick={(e) => handleLogout(e)}
-                  >
+                    >
                     {setting}
                   </Typography>
                 </MenuItem>

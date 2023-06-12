@@ -8,13 +8,14 @@ const defaultTheme = createTheme({
     },
     secondary: {
       main: '#AEC134'
-    }
+    },
+    background: 'rgb(245 247 254 / 0.98)'
   },
   typography: {
-    fontFamily: 'CynthoNext, sans-serif, system-ui',
+    fontFamily: 'font-family: "Droid Sans","Open Sans", "Helvetica", Arial',
     h1: {
       fonStyle: 'normal',
-      fontFamily: 'Alte DIN 1451 Mittelschrift',
+      fontFamily: 'font-family: "Droid Sans","Open Sans", "Helvetica", Arial',
       //fontSize: pxToRem(64),
       fontWeight: 400,
       lineHeight: '75px'
@@ -42,10 +43,10 @@ const defaultTheme = createTheme({
     },
     h5: {
       fonStyle: 'normal',
-      fontFamily: 'Alte DIN 1451 Mittelschrift',
+      fontFamily: 'fontFamily: "Droid Sans,Open Sans, Helvetica, Arial"',
       //fontSize: pxToRem(20),
-      fontWeight: 400,
-      lineHeight: '24px'
+      fontWeight: 600,
+      //lineHeight: '24px'
     },
     h6: {
       fonStyle: 'normal',

@@ -1,13 +1,18 @@
-import { StyledSidebarNavbar } from "./styles";
+import { StyledSidebarNavbar, StyledTabs } from "./styles";
 import { Link } from "react-router-dom";
+import { Tab } from "@mui/material";
+import { useState } from "react";
 
 const SidebarNavbar = () => {
+  const [value, setValue] = useState(0);
+
   return (
     <StyledSidebarNavbar>
-      <div style={{ width: "100%", display: 'flex', justifyContent: "space-around", alignItems:'center' }}>
-        <Link to="">CHATS</Link>
-        <Link to="">USUARIOS</Link>
-      </div>
+      <StyledTabs value={value} onChange={(e, newValue) => setValue(newValue)}>
+        <Tab label="CHATS" component={Link} to="" />
+        <Tab label="USUARIOS" component={Link} to="" />
+        <Tab label="MENSAJES DESTACADOS" component={Link} to="" />
+      </StyledTabs>
     </StyledSidebarNavbar>
   );
 };
