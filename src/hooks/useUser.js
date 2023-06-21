@@ -1,6 +1,6 @@
 import { useAtom } from "jotai";
 import { useMemo, useCallback } from "react";
-import userAtom from "../store/user";
+import {userAtom} from "../store/index";
 import { removeTokenUser } from "../utils/tokenHelper";
 
 const useUser = () => {

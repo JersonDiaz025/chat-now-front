@@ -4,7 +4,7 @@ import {
   initialValues,
   validationSchema,
 } from "../pages/Auth/FormModel/validation-schema";
-import useLogin from "./useLogin";
+import {useLogin} from "./index";
 import {ROUTES} from "../constants";
 
 export default function useAuth({ pathname }) {

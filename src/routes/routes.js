@@ -1,4 +1,4 @@
-import { HomePage, Login, Register } from "../pages";
+import { HomePage, Login, Register, ChatList, UsersList } from "../pages";
 import { ROUTES } from '../constants'
 
 export const routes = [
@@ -22,12 +22,13 @@ export const routes = [
     isPrivate: false,
     onlyUnknownUsers: true
   },
-  //{
-  //  path: '/chats',
-  //  component: ,
-  //  isLayout: true,
-  //isPrivate: true
-  //},
+  {
+    path: ROUTES.CHATS,
+    component: ChatList,
+    isLayout: true,
+    isPrivate: true,
+    onlyUnknownUsers: false
+  },
   //{
   //  path: '/messages',
   //  component: ViewForums,

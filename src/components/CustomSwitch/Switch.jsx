@@ -1,22 +1,21 @@
 import { sunIcon, moonIcon } from "../../assets";
-import * as React from 'react';
-import { Switch } from "@mui/material";
+//import { Switch } from "@mui/material";
 import { StyledSwitch } from "./styles";
+import { useTheme } from "../../hooks/index";
 
 const ControlledSwitches = () => {
+  const { darkMode, toggleDarkMode } = useTheme();
 
-  const [checked, setChecked] = React.useState(true);
-  const handleChange = (event) => {
-    setChecked(event.target.checked);
-  };
   return (
     <StyledSwitch>
-      <img src={moonIcon}/>
-      <Switch
-        checked={checked}
-        onChange={handleChange}
+      {/*<span className="span-icon">*/}
+        <img src={darkMode ? sunIcon : moonIcon} onClick={toggleDarkMode} />
+      {/*</span>*/}
+      {/*<Switch
+        checked={darkMode}
+        onChange={toggleDarkMode}
         inputProps={{ "aria-label": "controlled" }}
-      />
+      />*/}
     </StyledSwitch>
   );
 };

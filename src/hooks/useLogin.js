@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import apiService from "../services/apiService";
 import { ROUTES } from "../constants";
-import useUser from "./useUser";
+import {useUser} from "./index";
 //import { setLocalStorage } from "../utils/index";
 
 function useLogin() {

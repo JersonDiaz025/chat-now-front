@@ -11,7 +11,7 @@ const SidebarNavbar = () => {
       <StyledTabs value={value} onChange={(e, newValue) => setValue(newValue)}>
         <Tab label="CHATS" component={Link} to="" />
         <Tab label="USUARIOS" component={Link} to="" />
-        <Tab label="MENSAJES DESTACADOS" component={Link} to="" />
+        <Tab label="GUARDADOS" component={Link} to="" />
       </StyledTabs>
     </StyledSidebarNavbar>
   );

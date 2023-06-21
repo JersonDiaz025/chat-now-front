@@ -6,13 +6,18 @@ import {
   useHref,
   useNavigate,
 } from "react-router-dom";
+import { ThemeProvider } from "@mui/material";
 import { routes } from "../routes/routes";
 import Layout from "../Layout/Layout";
 import { ROUTES } from "../constants";
-import useUser from "../hooks/useUser";
+import { useUser, useTheme } from "../hooks/index";
+import defaultTheme from "../themes/defaultTheme";
 import { useEffect } from "react";
 
-function AppRouter(){
+function AppRouter() {
+  const { darkMode } = useTheme();
+
+  const theme = defaultTheme(darkMode);
   return (
     <Router>
       <UserValidator>
@@ -22,9 +27,11 @@ function AppRouter(){
               path={path}
               key={index}
               element={
-                <Layout isLayout={isLayout}>
-                  <Component />
-                </Layout>
+                <ThemeProvider theme={theme}>
+                  <Layout isLayout={isLayout}>
+                    <Component />
+                  </Layout>
+                </ThemeProvider>
               }
             />
           ))}
