@@ -48,7 +48,7 @@ function UserValidator({ children }) {
   const currentRoute = routes.find((route) => route.path === href);
   useEffect(() => {
     if (user?.isLogged) {
-      if (currentRoute.onlyUnknownUsers) {
+      if (currentRoute?.onlyUnknownUsers) {
         navigate(ROUTES.HOME);
       }
     } else {

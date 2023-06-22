@@ -11,7 +11,7 @@ export const StyledSidebarNavbar = styled(Box)(({ theme }) => ({
   fontWeight: theme.typography.fontWeight,
   //flexDirection: 'row',
   //position: 'sticky',
-  padding: theme.spacing(2),
+  padding: theme.spacing(0,1,0,1),
   alignItems: "center",
   //minHeight: '100%',
   width: "100%",
@@ -24,17 +24,19 @@ export const StyledSidebarNavbar = styled(Box)(({ theme }) => ({
   //}
 }));
 
-export const StyledTabs = styled(Tabs)({
+export const StyledTabs = styled(Tabs)(({ theme })=> ({
   display: "flex",
   //backgroundColor: 'red ',
   width: "100% ",
-  "& .css-heg063-MuiTabs-flexContainer": {
-    justifyContent: "space-",
-  },
+  //color: 'inherit'
+  //"& .MuiTabs-indicator": {
+  //  backgroundColor: 'red', // Color de fondo del indicador
+  //},
+ 
 
   //transition: "transform 0.3s",
 
   //"& .Mui-selected .MuiTabs-indicator": {
   //  transform: "scaleX(1)", // Ancho completo del tab seleccionado
   //},
-});
+}));

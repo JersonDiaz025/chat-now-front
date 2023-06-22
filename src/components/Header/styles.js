@@ -2,7 +2,7 @@ import { Box, styled } from '@mui/material';
 
 export const StyledHeader = styled(Box)(({ theme }) => ({
   display: 'flex',
-  position: 'sticky',
+  position: 'absolute',
   maxWidth:"1640",
   zIndex: 50,
   top: 0,
