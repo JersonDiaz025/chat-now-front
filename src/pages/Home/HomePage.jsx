@@ -11,7 +11,7 @@ const HomePage = () => {
         style={{
           width: "100%",
           //backgroundColor: "green",
-          maxWidth: "300px",
+          maxWidth: "360px",
           minWidth: "150px",
           position: "sticky",
           top: "0",
@@ -22,8 +22,8 @@ const HomePage = () => {
           <SidebarUsers />
         </StyledContentSidebar>
       </div>
-      <div style={{ display: "flex", height: "100%", minHeight: "400px" }}>
-        <main style={{ display: "flex", padding: 10 }}></main>
+      <div style={{ display: "flex", height: "100%",width: '100%',justifyContent: 'center',alignItems: 'center', backgroundColor: 'gray' }}>
+        fgjdsgnbjfnb
       </div>
     </StyledHome>
   );

@@ -8,3 +8,5 @@ export { default as Loader } from "./Loader/Loader";
 export { default as ControlledSwitches } from "./CustomSwitch/Switch";
 export { default as SidebarUsers } from "./SidebarUsers/Sidebar";
 export { default as CardContainerForm } from "./CardContainerForm/CardContainerForm";
+//export { default as StyledContentChatView } from "./ChatView/ContentChatView";
+export { default as ChatView } from "./ChatView/ChatView";

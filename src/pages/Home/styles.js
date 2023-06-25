@@ -6,7 +6,7 @@ export const StyledHome = styled(Box)(({ theme }) => ({
   height: "100%",
   //maxHeight: "100%",
   //position: "relative",
-  //display: "flex",
+  display: "flex",
   //minHeight: "100%",
   overflowY: "hidden",
   //alignItems: 'center',

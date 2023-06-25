@@ -2,16 +2,17 @@ import { Box, styled, Tabs, Tab } from "@mui/material";
 
 export const StyledSidebarNavbar = styled(Box)(({ theme }) => ({
   display: "flex",
-  position: 'sticky',
-  top: '73px',
+  //position: 'sticky',
+  //top: '73px',
   //flexWrap: "wrap",
   justifyContent: "center",
-  margin: theme.spacing(8, 0, 0, 0),
+  //margin: theme.spacing(8, 0, 0, 0),
   fontFamily: "Droid Sans,Open Sans, Helvetica, Arial",
   fontWeight: theme.typography.fontWeight,
   //flexDirection: 'row',
   //position: 'sticky',
-  padding: theme.spacing(0,1,0,1),
+  //padding: theme.spacing(0,1,0,1),
+  gap: '20px',
   alignItems: "center",
   //minHeight: '100%',
   width: "100%",
@@ -26,8 +27,13 @@ export const StyledSidebarNavbar = styled(Box)(({ theme }) => ({
 
 export const StyledTabs = styled(Tabs)(({ theme })=> ({
   display: "flex",
+  alignItems: 'center',
+  justifyContent: 'center',
   //backgroundColor: 'red ',
   width: "100% ",
+  maxWidth: '100%',
+  padding: '0',
+  margin: '0'
   //color: 'inherit'
   //"& .MuiTabs-indicator": {
   //  backgroundColor: 'red', // Color de fondo del indicador

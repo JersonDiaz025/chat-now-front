@@ -1,6 +1,6 @@
 import { Box, styled } from '@mui/material';
 
-export const StyledUsersList = styled(Box)(({ theme }) => ({
+export const StyledChatView = styled(Box)(({ theme }) => ({
   //padding: 0,
   //width: '100%',
   //height: '100%',

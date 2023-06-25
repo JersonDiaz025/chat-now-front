@@ -23,19 +23,23 @@ export const routes = [
     isPrivate: false,
     onlyUnknownUsers: true,
   },
-  {
-    path: ROUTES.CHATS,
-    component: ChatList,
-    isLayout: true,
-    isPrivate: true,
-    onlyUnknownUsers: false,
-  },
-  {
-    path: ROUTES.USERS,
-    component: UsersList,
-    isLayout: true,
-    isPrivate: true,
-  },
+  //{
+  //  path: ROUTES.CHATS,
+  //  component: ChatList,
+  //  isLayout: true,
+  //  isPrivate: true,
+  //  onlyUnknownUsers: false,
+  //},
+  //{
+  //  path: ROUTES.USERS,
+  //  component: UsersList,
+  //  isLayout: true,
+  //  isPrivate: true,
+  //},
+  //{
+  //  path: ROUTES.CHAT_VIEW,
+    
+  //},
   //{
   //  path: "*",
   //  component: Login,
