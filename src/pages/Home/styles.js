@@ -2,7 +2,7 @@ import { Box, styled } from "@mui/material";
 
 export const StyledHome = styled(Box)(({ theme }) => ({
   //padding: 0,
-  //width: "100%",
+  width: "100%",
   height: "100%",
   //maxHeight: "100%",
   //position: "relative",
@@ -12,7 +12,7 @@ export const StyledHome = styled(Box)(({ theme }) => ({
   //alignItems: 'center',
   //display: "grid",
   //gridTemplateColumns: "20rem auto",
-  //backgroundColor: theme.mode.background,
+  backgroundColor: theme.mode.background,
   //margin: theme.spacing(10, 0, 0, 0),
   //background: 'red'
 

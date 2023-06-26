@@ -1,13 +1,15 @@
-import { Box, styled } from '@mui/material';
+import { Box, styled, Paper} from '@mui/material';
 
 export const StyledChatView = styled(Box)(({ theme }) => ({
   //padding: 0,
-  //width: '100%',
-  //height: '100%',
+  width: '100%',
+  //marginTop: '0px',
+  //height: 'auto',
   //display: 'flex',
   //justifyContent: 'center',
-  //alignItems: 'center',
+  //alignItems: 'flex-start',
   //flexDirection: 'column',
+  //backgroundColor: 'gray',
 
   //[theme.breakpoints.down('sm')]: {
   //  //margin: 1,

@@ -21,10 +21,10 @@ export const StyledSidebar = styled(Box)(({ theme }) => ({
   //height: '100vh',
   //padding: '10px',
   '&::-webkit-scrollbar': {
-    width: '9px', /* Ancho de la barra de desplazamiento */
+    width: '5px', /* Ancho de la barra de desplazamiento */
   },
   '&::-webkit-scrollbar-track': {
-    //background: '#f1f1f1', /* Color de fondo de la pista de desplazamiento */
+    background: '#f1f1f1', /* Color de fondo de la pista de desplazamiento */
     backgroundColor: theme.mode.background,
 
   },
@@ -33,8 +33,8 @@ export const StyledSidebar = styled(Box)(({ theme }) => ({
     //backgroundColor: theme.mode.background,
     borderRadius: '50px',
   },
-  //'& hover::-webkit-scrollbar-thumb:hover': {
-  //  background: '#555', /* Color del pulgar de desplazamiento al pasar el cursor sobre él */
+  '&::-webkit-scrollbar-thumb': {
+    background: '#555', /* Color del pulgar de desplazamiento al pasar el cursor sobre él */
     
-  //},
+  },
 }))

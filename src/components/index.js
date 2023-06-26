@@ -10,3 +10,5 @@ export { default as SidebarUsers } from "./SidebarUsers/Sidebar";
 export { default as CardContainerForm } from "./CardContainerForm/CardContainerForm";
 //export { default as StyledContentChatView } from "./ChatView/ContentChatView";
 export { default as ChatView } from "./ChatView/ChatView";
+export { default as HeaderChatView } from "./HeaderChatView/HeaderChatView";
+export { default as Typography } from "./Typography/Typograpthy"

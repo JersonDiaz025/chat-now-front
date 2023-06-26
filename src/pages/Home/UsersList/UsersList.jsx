@@ -1,9 +1,7 @@
 import { StyledUsersList } from "./styles";
 import { useState } from "react";
-
+import { Typography } from "../../../components";
 import Avatar from "@mui/material/Avatar";
-import Typography from "@mui/material/Typography";
-import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -90,7 +88,7 @@ const data = [
 ];
 
 const UsersList = () => {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(null);
   return (
     <StyledUsersList>
       <nav
@@ -104,10 +102,10 @@ const UsersList = () => {
         {data.map((item, index) => (
           <span
             key={index}
-            onClick={()=> setActive(index)}
+            onClick={() => setActive(index)}
             style={{
-              backgroundColor: `${active === index ? 'rgba(35,39,47,.08)' : ''}`,
-              borderRadius: '8px',
+              backgroundColor: `${active === index ? "#4DC95B" : ""}`,
+              borderRadius: "8px",
               display: "flex",
               gap: "20px",
               padding: "10px",
@@ -117,7 +115,7 @@ const UsersList = () => {
             }}
           >
             <Avatar alt={item.nombre} src={item.imagen} />
-            <Typography variant="h7">{item.nombre}</Typography>
+            <Typography variant="body2" text={item.nombre} />
           </span>
         ))}
       </nav>

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-const NavLink = ({to, text}) => {
+const NavLink = ({text, activeLink}) => {
   return (
-    <Link to={to}>
+    <li>
       {text}
-    </Link>
+    </li>
   );
 }
 
