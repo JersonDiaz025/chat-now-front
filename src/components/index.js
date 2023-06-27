@@ -11,4 +11,5 @@ export { default as CardContainerForm } from "./CardContainerForm/CardContainerF
 //export { default as StyledContentChatView } from "./ChatView/ContentChatView";
 export { default as ChatView } from "./ChatView/ChatView";
 export { default as HeaderChatView } from "./HeaderChatView/HeaderChatView";
-export { default as Typography } from "./Typography/Typograpthy"
+export { default as Typography } from "./Typography/Typograpthy";
+export { default as NavList } from "./NavList/NavList";
