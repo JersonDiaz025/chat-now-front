@@ -6,7 +6,7 @@ const ChatView = () => {
   return (
     <StyledChatView>
       <Box sx={{marginTop: '5rem'}}>
-        <HeaderChatView />
+        {/*<HeaderChatView />*/}
         fkdccddfcfcc
       </Box>
     </StyledChatView>

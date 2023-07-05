@@ -14,7 +14,12 @@ const SidebarUsers = () => {
   return (
     <StyledSidebar>
       <SidebarNavbar />
-      <div style={{ padding: "10px", height: "100vh", overflowY: "auto" }}>
+      <div
+        style={{
+          padding: "10px",
+          //height: '100%'
+        }}
+      >
         {renderContentSidebar({ activeContent })}
       </div>
     </StyledSidebar>

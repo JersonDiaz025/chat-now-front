@@ -2,9 +2,9 @@ import { Box, styled } from '@mui/material';
 
 export const StyledHeader = styled(Box)(({ theme }) => ({
   display: 'flex',
-  position: 'absolute',
+  position: 'fixed',
   maxWidth:"1640",
-  zIndex: 50,
+  zIndex: 200,
   top: 0,
   //background: '#fff',
   backgroundColor: theme.mode.background,

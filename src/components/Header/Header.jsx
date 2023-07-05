@@ -34,6 +34,12 @@ const Header = () => {
           alignItems: "center",
           paddingX: '10px',
           maxWidth: "100%",
+
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          paddingLeft: '30px',
+          paddingRight: '30px',
+          width: '1410px',
         }}
       >
         <img src={iconChat} />

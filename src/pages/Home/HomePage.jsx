@@ -7,24 +7,14 @@ const HomePage = () => {
 
   return (
     <StyledHome>
-      <div
-        style={{
-          width: "100%",
-          //backgroundColor: "green",
-          maxWidth: "320px",
-          minWidth: "150px",
-          position: "sticky",
-          top: "0",
-          height: "100%",
-        }}
-      >
-        <StyledContentSidebar>
-          <SidebarUsers />
-        </StyledContentSidebar>
-      </div>
-      <div style={{ height: "100%", width: '100%', marginTop: '0px' }}>
-        <ChatView/>
-      </div>
+      <StyledContentSidebar>
+        <SidebarUsers />
+      </StyledContentSidebar>
+      {/*<div style={{ height: "100%", width: '100%', marginTop: '0px' }}>*/}
+      <section style={{width: '70%', float: '', height: '100%' }}>
+        <ChatView />
+      </section>
+      {/*</div>*/}
     </StyledHome>
   );
 };
