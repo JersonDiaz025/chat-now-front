@@ -1,6 +1,6 @@
 import { useUser } from "../../hooks/index";
 import { StyledHome, StyledContentSidebar } from "./styles";
-import { ChatView, SidebarUsers } from "../../components";
+import { ChatView, SidebarUsers, HeaderChatView } from "../../components";
 
 const HomePage = () => {
   const user = useUser();
@@ -11,7 +11,8 @@ const HomePage = () => {
         <SidebarUsers />
       </StyledContentSidebar>
       {/*<div style={{ height: "100%", width: '100%', marginTop: '0px' }}>*/}
-      <section style={{width: '70%', float: '', height: '100%' }}>
+      <section style={{ width: '70%', float: '', height: '100%' }}>
+      <HeaderChatView />
         <ChatView />
       </section>
       {/*</div>*/}

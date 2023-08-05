@@ -5,9 +5,9 @@ import { Box } from "@mui/material";
 const ChatView = () => {
   return (
     <StyledChatView>
-      <Box sx={{marginTop: '5rem'}}>
-        {/*<HeaderChatView />*/}
-        fkdccddfcfcc
+      {/*<HeaderChatView />*/}
+      <Box sx={{}}>
+        
       </Box>
     </StyledChatView>
   );

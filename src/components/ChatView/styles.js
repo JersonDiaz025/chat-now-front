@@ -4,7 +4,7 @@ export const StyledChatView = styled(Box)(({ theme }) => ({
   //padding: 0,
   //width: '100%',
   //marginTop: '0px',
-  //height: 'auto',
+  height: '80%',
   //display: 'flex',
   //justifyContent: 'center',
   //alignItems: 'flex-start',
@@ -20,7 +20,7 @@ export const StyledChatView = styled(Box)(({ theme }) => ({
 
 
   backgroundColor: '#fff',
-  padding: '30px',
+  //padding: '30px',
   borderRadius: '4px',
   boxShadow: '0 0 9px 2px rgba(8,9,10,.07)',
   position: 'relative',

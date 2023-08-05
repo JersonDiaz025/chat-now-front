@@ -6,7 +6,7 @@ export const StyledHome = styled(Box)(({ theme }) => ({
   //width: "100%",
   height: "100%",
   display: "flex",
-  //backgroundColor: theme.mode.background,
+  backgroundColor: theme.mode.background,
   overflow: "hidden",
   //position: 'absolute',
   //position: 'relative',

@@ -2,8 +2,8 @@ import { Box, styled, AppBar } from '@mui/material';
 
 export const StyledHeaderChatView = styled(Box)(({theme}) => ({
   width: '100%',
-  height: '100%',
-  position: 'static',
+  //height: '100%',
+  //position: 'static',
   backgroundColor: theme.backgroundColor ,
   padding: '9px',
   display: 'flex',
