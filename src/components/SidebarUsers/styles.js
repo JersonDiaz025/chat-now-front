@@ -1,7 +1,7 @@
 import { Box, styled } from "@mui/material";
 
 export const StyledSidebar = styled(Box)(({ theme }) => ({
-  //backgroundColor:'#fff',
+  //backgroundColor:'red',
   //borderRadius: '4px',
   //boxShadow: '0 0 9px 2px rgba(8,9,10,.07)',
   //padding: '0px',
@@ -46,7 +46,7 @@ export const StyledSidebar = styled(Box)(({ theme }) => ({
 
   //width: "30%",
   //padding: "10px",
-  color: "#ffffffb2",
+  //color: "#ffffffb2",
   cursor: "default",
   display: "block",
   //position: "relative",
@@ -62,7 +62,7 @@ export const StyledSidebar = styled(Box)(({ theme }) => ({
   overflow: "hidden",
   overflowY: "scroll",
 
-  backgroundColor: theme.mode.background,
+  //backgroundColor: theme.mode.background,
   //boxShadow: "rgb(1 5 3 / 25%) 0 0 15px -6px, rgb(0 0 0 / 30%) 0 0 5px -1px",
   //padding: '10px',
 

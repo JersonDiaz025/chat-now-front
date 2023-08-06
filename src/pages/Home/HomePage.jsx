@@ -11,7 +11,7 @@ const HomePage = () => {
         <SidebarUsers />
       </StyledContentSidebar>
       {/*<div style={{ height: "100%", width: '100%', marginTop: '0px' }}>*/}
-      <section style={{ width: '70%', float: '', height: '100%' }}>
+      <section style={{ width: '70%', float: '', height: 'calc(86% - 14px)' }}>
       <HeaderChatView />
         <ChatView />
       </section>

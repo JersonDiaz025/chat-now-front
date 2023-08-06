@@ -4,7 +4,7 @@ export const StyledSidebarNavbar = styled(Box)(({ theme }) => ({
   display: "flex",
   position: 'sticky',
   top: '0',
-  zIndex: 50,
+  zIndex: 5000,
   //flexWrap: "wrap",
   justifyContent: "center",
   //margin: theme.spacing(8, 0, 0, 0),
@@ -19,8 +19,8 @@ export const StyledSidebarNavbar = styled(Box)(({ theme }) => ({
   width: "100%",
   //maxWidth: '420px',
   //overflow: 'hidden',
-  background: theme.mode.background,
-  boxShadow: "rgb(1 5 3 / 25%) 0 0 15px -6px, rgb(0 0 0 / 30%) 0 0 1px -12px",
+  //background: theme.mode.background,
+  boxShadow: '0 2px 4px 0 rgba(0,0,0,0.20)',
   //[theme.breakpoints.down('sm')]: {
   //  height: "auto",
   //}

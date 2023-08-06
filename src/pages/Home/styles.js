@@ -1,10 +1,11 @@
 import { Box, Paper, styled } from "@mui/material";
 
 export const StyledHome = styled(Box)(({ theme }) => ({
+  height: 'calc(100% - 16px)',
   //padding: 0,
   //marginTop: "6rem",
   //width: "100%",
-  height: "100%",
+  //height: "100%",
   display: "flex",
   backgroundColor: theme.mode.background,
   overflow: "hidden",

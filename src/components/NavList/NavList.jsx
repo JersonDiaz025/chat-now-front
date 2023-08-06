@@ -12,7 +12,7 @@ const NavList = ({ data }) => {
           key={index}
           onClick={() => setActive(index)}
           style={{
-            backgroundColor: `${active === index ? "#4DC95B" : ""}`,
+            backgroundColor: `${active === index ? "#33BF54" : ""}`,
             borderRadius: "8px",
             display: "flex",
             gap: "20px",

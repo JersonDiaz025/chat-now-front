@@ -5,8 +5,8 @@ import { Typography } from "../../components";
 const HeaderChatView = () => {
   return (
     <StyledHeaderChatView>
-      <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
-        {/*<Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />*/}
+      <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+        <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
         <Typography
           variant='body1'
           text='LOGO'

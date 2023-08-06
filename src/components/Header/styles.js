@@ -12,6 +12,8 @@ export const StyledHeader = styled(Box)(({ theme }) => ({
   justifyContent: 'space-between',
   padding: theme.spacing(2),
   alignItems: 'center',
+  //background: '#FFFFFF',
+  boxShadow: '0 2px 4px 0 rgba(0,0,0,0.20)',
   
   //boxShadow: 'rgb(1 5 3 / 25%) 0 0 15px -6px, rgb(0 0 0 / 30%) 0 0 1px -12px',
   //justifyContent: 'center',
