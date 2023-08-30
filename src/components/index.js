@@ -13,3 +13,6 @@ export { default as ChatView } from "./ChatView/ChatView";
 export { default as HeaderChatView } from "./HeaderChatView/HeaderChatView";
 export { default as Typography } from "./Typography/Typograpthy";
 export { default as NavList } from "./NavList/NavList";
+export { default as Background } from "./Background/Background";
+export { default as SearchItems } from "./SearchItems/SearchItems";
+export { default as ChatForm } from "./ChatForm/ChatForm";

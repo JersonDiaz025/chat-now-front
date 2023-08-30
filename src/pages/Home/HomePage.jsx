@@ -4,6 +4,7 @@ import { ChatView, SidebarUsers, HeaderChatView } from "../../components";
 
 const HomePage = () => {
   const user = useUser();
+  const data = { name: 'jose', image: 'Jose Rivera'}
 
   return (
     <StyledHome>
@@ -12,7 +13,7 @@ const HomePage = () => {
       </StyledContentSidebar>
       {/*<div style={{ height: "100%", width: '100%', marginTop: '0px' }}>*/}
       <section style={{ width: '70%', float: '', height: 'calc(86% - 14px)' }}>
-      <HeaderChatView />
+        <HeaderChatView data={ data} />
         <ChatView />
       </section>
       {/*</div>*/}

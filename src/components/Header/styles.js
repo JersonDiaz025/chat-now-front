@@ -7,7 +7,7 @@ export const StyledHeader = styled(Box)(({ theme }) => ({
   zIndex: 200,
   top: 0,
   //background: '#fff',
-  backgroundColor: theme.mode.background,
+  backgroundColor: theme.mode.colorHeader,
   borderBottom: '1px solid #E7EBF0',
   justifyContent: 'space-between',
   padding: theme.spacing(2),

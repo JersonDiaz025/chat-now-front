@@ -1,12 +1,11 @@
-import { StyledChatView } from "./styles";
-import { HeaderChatView } from "../../components";
-import { Box } from "@mui/material";
+import { StyledChatView, StyledChatAppContainer } from "./styles";
+import { HeaderChatView, ChatForm } from "../../components";
 
 const ChatView = () => {
   return (
     <StyledChatView>
       {/*<HeaderChatView />*/}
-      <Box sx={{height: '100%', overflowY: "auto", padding: '15px'}}>
+      <StyledChatAppContainer>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
@@ -32,21 +31,19 @@ const ChatView = () => {
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
-        <var>v</var>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
-        <var>v</var>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
-        <var></var>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
         <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem porro modi sapiente recusandae odio, voluptates error delectus id blanditiis, quisquam consectetur repellendus explicabo deserunt rem, expedita ducimus excepturi vitae dignissimos?</div>
-      </Box>
+      </StyledChatAppContainer>
+      <ChatForm/>
     </StyledChatView>
   );
 };

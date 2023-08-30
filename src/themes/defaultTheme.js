@@ -13,8 +13,11 @@ const defaultTheme = (darkMode) => {
     },
 
     mode: {
-      background: darkMode ? "#0f0f0f" : "#FFFFFF",
-      colorIcon: darkMode ? 'rgba(246,247,249,.05)': "rgba(35,39,47,.05)",
+      colorHeader: darkMode ? "#0f0f0f": "#e5e8e8",
+      background: darkMode ? "#0f0f0f" : "",
+      colorIcon: darkMode ? 'rgba(246,247,249,.05)' : "rgba(35,39,47,.05)",
+      textColor: !darkMode ? "#0f0f0f": "#e5e8e8",
+      
     },
     typography: {
       fontFamily: 'Quicksand, sans-serif',

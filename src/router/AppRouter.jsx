@@ -14,6 +14,7 @@ import { useUser, useTheme } from "../hooks/index";
 import defaultTheme from "../themes/defaultTheme";
 import { useEffect } from "react";
 
+
 function AppRouter() {
   const { darkMode } = useTheme();
 
@@ -37,7 +38,7 @@ function AppRouter() {
           ))}
         </Routes>
       </UserValidator>
-    </Router>
+      </Router>
   );
 }
 

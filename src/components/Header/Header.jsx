@@ -10,6 +10,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { iconChat } from "../../assets";
 import { useUser } from "../../hooks/index";
 import { ControlledSwitches } from "../index";
+import { SearchItems } from "../index";
 
 const SENTING = ["Profile", "Account", "Logout"];
 
@@ -32,38 +33,81 @@ const Header = () => {
         sx={{
           display: "flex",
           alignItems: "center",
-          paddingX: '10px',
+          paddingX: "10px",
           maxWidth: "100%",
-
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          paddingLeft: '30px',
-          paddingRight: '30px',
-          width: '1410px',
+          //background: "#e5e7e8",
+          marginLeft: "auto",
+          marginRight: "auto",
+          paddingLeft: "30px",
+          paddingRight: "30px",
+          width: "1410px",
+          justifyContent: "space-between",
         }}
       >
-        <img src={iconChat} />
-        <Typography
-          variant="h5"
-          noWrap
-          component="a"
+        <Box
           sx={{
-            mr: 2,
-            ml: 2,
-            display: { xs: "flex" },
-            flexGrow: 1,
-            fontFamily: "monospace",
-            fontWeight: 600,
-            //letterSpacing: ".1rem",
-            //color: "#000000",
-            textDecoration: "none",
+            display: "flex",
+            alignItems: "center",
           }}
         >
-          ChatNow
-        </Typography>
-        <ControlledSwitches />
+          <img src={iconChat} />
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            sx={{
+              mr: 2,
+              ml: 2,
+              display: { xs: "flex" },
+              flexGrow: 1,
+              fontFamily: "monospace",
+              fontWeight: 600,
+              //letterSpacing: ".1rem",
+              //color: "#000000",
+              textDecoration: "none",
+            }}
+          >
+            ChatNow
+          </Typography>
+          <ControlledSwitches />
+        </Box>
+        <SearchItems />
+        <Box >
+          <Tooltip title="Open settings">
+            <IconButton
+              onClick={(ev) => setAnchorElUser(ev.currentTarget)}
+              sx={{ p: 0 }}
+            >
+              <Avatar alt={user.name?.toUpperCase()} src="J" />
+            </IconButton>
+          </Tooltip>
+          <Menu
+            sx={{ mt: "45px" }}
+            id="menu-appbar"
+            anchorEl={anchorElUser}
+            anchorOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            open={Boolean(anchorElUser)}
+            onClose={() => setAnchorElUser(null)}
+          >
+            {SENTING.map((setting) => (
+              <MenuItem key={setting} onClick={() => setAnchorElUser(null)}>
+                <Typography textAlign="center" onClick={(e) => handleLogout(e)}>
+                  {setting}
+                </Typography>
+              </MenuItem>
+            ))}
+          </Menu>
+        </Box>
       </Box>
-      <Box sx={{ flexGrow: 0 }}>
+      {/*<Box sx={{ flexGrow: 0 }}>
         <Tooltip title="Open settings">
           <IconButton
             onClick={(ev) => setAnchorElUser(ev.currentTarget)}
@@ -96,7 +140,7 @@ const Header = () => {
             </MenuItem>
           ))}
         </Menu>
-      </Box>
+      </Box>*/}
       {/*</Toolbar>*/}
       {/*</Container>*/}
     </StyledHeader>

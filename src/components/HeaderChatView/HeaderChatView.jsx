@@ -2,14 +2,14 @@ import { StyledHeaderChatView } from "./styles";
 import Avatar from "@mui/material/Avatar";
 import { Typography } from "../../components";
 
-const HeaderChatView = () => {
+const HeaderChatView = ({data}) => {
   return (
     <StyledHeaderChatView>
       <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-        <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+        <Avatar alt={data.image} src="/static/images/avatar/2.jpg" />
         <Typography
           variant='body1'
-          text='LOGO'
+          text={data?.name}
           classes={{
             fontFamily: "monospace",
             fontWeight: 700,
