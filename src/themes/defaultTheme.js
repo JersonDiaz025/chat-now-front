@@ -8,23 +8,28 @@ const defaultTheme = (darkMode) => {
         main: "#4BA2AC",
       },
       secondary: {
-        main: "#AEC134", 
+        main: "#AEC134",
       },
     },
 
     mode: {
-      colorHeader: darkMode ? "#0f0f0f": "#e5e8e8",
-      background: darkMode ? "#0f0f0f" : "",
-      colorIcon: darkMode ? 'rgba(246,247,249,.05)' : "rgba(35,39,47,.05)",
-      textColor: !darkMode ? "#0f0f0f": "#e5e8e8",
-      
+      colorHeader: darkMode ? "rgb(22, 27, 34)" : "#e5e8e8",
+      background: darkMode ? "rgb(22, 27, 34)" : "",
+      colorIcon: darkMode ? "rgba(246,247,249,.05)" : "rgba(35,39,47,.05)",
+      textColor: !darkMode ? "#0f0f0f" : "#e5e8e8",
+      backgroundNavbarSidebar: darkMode ? "#rgb(22, 27, 34)" : "#F0F0F0",
+      border: darkMode ? "1px solid rgb(48, 54, 61)" : "1px solid #d9d9e3",
+
+      //panel-header-icon: #aebac1;
+
+      //panel-header-background: #202c33;
     },
     typography: {
-      fontFamily: 'Quicksand, sans-serif',
+      fontFamily: "Quicksand, sans-serif",
       color: !darkMode ? "#0f0f0f" : "#F5F7FE",
       h1: {
         fonStyle: "normal",
-        fontFamily: 'Quicksand, sans-serif',
+        fontFamily: "Quicksand, sans-serif",
         //fontSize: pxToRem(64),
         color: !darkMode ? "#0f0f0f" : "#F5F7FE",
         fontWeight: 400,

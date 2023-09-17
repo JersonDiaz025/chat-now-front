@@ -20,7 +20,7 @@ const SidebarNavbar = () => {
         {menuItems.map(({ id, label, icon: Icon }) => (
           <Tab
             key={id}
-            icon={<Icon />}
+            icon={<Icon sx={{ color: '#25c2a0' }} />}
             label={<Typography variant="body2" text={label} />}
             onClick={() => handleRenderContent(id)}
           />

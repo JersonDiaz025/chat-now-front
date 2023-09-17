@@ -4,7 +4,9 @@ export const StyledSidebarNavbar = styled(Box)(({ theme }) => ({
   display: "flex",
   position: 'sticky',
   top: '0',
-  zIndex: 5000,
+  zIndex: 500,
+  padding: '1px',
+  background: theme.mode.backgroundNavbarSidebar,
   //flexWrap: "wrap",
   justifyContent: "center",
   //margin: theme.spacing(8, 0, 0, 0),
@@ -13,7 +15,7 @@ export const StyledSidebarNavbar = styled(Box)(({ theme }) => ({
   //flexDirection: 'row',
   //position: 'sticky',
   //padding: theme.spacing(0,1,0,1),
-  gap: '20px',
+  gap: '10px',
   alignItems: "center",
   //minHeight: '100%',
   width: "100%",
@@ -24,6 +26,8 @@ export const StyledSidebarNavbar = styled(Box)(({ theme }) => ({
   //[theme.breakpoints.down('sm')]: {
   //  height: "auto",
   //}
+
+  border: theme.mode.border,
 }));
 
 export const StyledTabs = styled(Tabs)(({ theme })=> ({
@@ -33,12 +37,15 @@ export const StyledTabs = styled(Tabs)(({ theme })=> ({
   //backgroundColor: 'red ',
   width: "100% ",
   maxWidth: '100%',
-  padding: '0',
-  margin: '0'
+  //padding: '0',
+  margin: '0',
   //color: 'inherit'
   //"& .MuiTabs-indicator": {
   //  backgroundColor: 'red', // Color de fondo del indicador
   //},
+  '& .css-1ueh17f-MuiTabs-indicator': {
+    background: '#25c2a0'
+  },
 
   
  

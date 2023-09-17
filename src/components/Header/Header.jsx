@@ -11,6 +11,8 @@ import { iconChat } from "../../assets";
 import { useUser } from "../../hooks/index";
 import { ControlledSwitches } from "../index";
 import { SearchItems } from "../index";
+import Badge from '@mui/material/Badge';
+import NotificationsIcon from '@mui/icons-material/Notifications';
 
 const SENTING = ["Profile", "Account", "Logout"];
 
@@ -72,7 +74,11 @@ const Header = () => {
           <ControlledSwitches />
         </Box>
         <SearchItems />
+        {/*<Badge badgeContent={1} color="error">
+            <NotificationsIcon/>
+          </Badge>*/}
         <Box >
+          
           <Tooltip title="Open settings">
             <IconButton
               onClick={(ev) => setAnchorElUser(ev.currentTarget)}

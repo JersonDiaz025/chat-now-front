@@ -1,7 +1,8 @@
 import { Box, Paper, styled } from "@mui/material";
 
 export const StyledHome = styled(Box)(({ theme }) => ({
-  height: 'calc(100% - 16px)',
+  height: "100%",
+
   //padding: 0,
   //marginTop: "6rem",
   //width: "100%",
@@ -37,47 +38,13 @@ export const StyledHome = styled(Box)(({ theme }) => ({
   //  padding: 1,
   //  height: "100%",
   //}
-}));
+  //border: '0.1px solid #ffff',
 
-export const StyledContentSidebar = styled(Paper)(({ theme }) => ({
-  //background: "red",
-  //padding: '1px',
-  //position: "sticky",
-  //top: "0",
-  //backgroundColor: "blue",
-  height: "100%",
-  //display: "flex",
-  //flexDirection: "column",
-  //overflowY: 'scroll',
-  //width: '100%',
-  //minWidth: '150px',
-  //maxWidth: '300px',
-  //width: '100%',
-  //[theme.breakpoints.down('sm')]: {
-  //  //margin: 1,
-  //  width: '100%',
-  //  padding: 1,
-  //  height: "100%",
-  //}
-  //marginTop: "88px",
-  //float: "left",
-  //width: '500px',
-  //height: '100%',
-  //background: '#1783db',
-  //position: 'fixed',
-  //top: '90px',
-  //left: '90px',
-  //color: "white",
-  //fontSize: '18px',
-  //zIndex: 300,
-  //overflow: 'hidden',
-  //overflowY: 'scroll',
-  //borderRight: '20px solid #1783db',
   "& ::-webkit-scrollbar": {
-    display: 'none',
-    width: '6px'
+    display: "none",
+    width: "6px",
   },
-  "& ::-webkit-scrollbar-track": {
+  "& hover::-webkit-scrollbar-track": {
     //background: '#f1f1f1', /* Color de fondo de la pista de desplazamiento */
     backgroundColor: theme.mode.background,
   },
@@ -91,5 +58,11 @@ export const StyledContentSidebar = styled(Paper)(({ theme }) => ({
       "#5555" /* Color del pulgar de desplazamiento al pasar el cursor sobre él */,
   },
   transition: "all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86)",
-  backgroundColor: theme.mode.background,
+}));
+
+export const StyledContent = styled(Box)(({ theme }) => ({
+  width: "70%",
+  height: "calc(91% - 14px)",
+  border: theme.mode.border,
+  borderBottomRightRadius: "12px",
 }));

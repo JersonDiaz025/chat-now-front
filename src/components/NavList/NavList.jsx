@@ -1,18 +1,19 @@
 import { StyledNavList } from "./styles";
-import { useState } from "react";
 import { Typography } from "../../components";
 import Avatar from "@mui/material/Avatar";
+import { userSelectedChat } from "../../hooks";
 
 const NavList = ({ data }) => {
-  const [active, setActive] = useState(null);
+  const { authorSelected, handleSelected } = userSelectedChat();
+
   return (
     <StyledNavList>
-      {data.map((item, index) => (
+      {data.map(({ id, nombre, imagen }, index) => (
         <span
           key={index}
-          onClick={() => setActive(index)}
+          onClick={() => handleSelected({ id, nombre, imagen })}
           style={{
-            backgroundColor: `${active === index ? "#33BF54" : ""}`,
+            backgroundColor: `${authorSelected?.id === id ? "#25c2a0" : ""}`,
             borderRadius: "8px",
             display: "flex",
             gap: "20px",
@@ -22,8 +23,18 @@ const NavList = ({ data }) => {
             cursor: "pointer",
           }}
         >
-          <Avatar alt={item.nombre} src={item.imagen} />
-          <Typography variant="body2" text={item.nombre} />
+          <Avatar alt={nombre} src={imagen} />
+          <Typography
+            variant="body2"
+            text={nombre}
+            classes={{
+              //color: "#5f6368",
+              fontSize: "14px",
+              lineHeight: "1.25rem",
+              fontWeight: 700,
+              //color: "#1C1E21",
+            }}
+          />
         </span>
       ))}
     </StyledNavList>

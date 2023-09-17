@@ -16,9 +16,9 @@ const SidebarUsers = () => {
       <SidebarNavbar />
       <div
         style={{
-          padding: "10px",
-          //height: '100%'
+          padding: "5px",
         }}
+        className="h"
       >
         {renderContentSidebar({ activeContent })}
       </div>

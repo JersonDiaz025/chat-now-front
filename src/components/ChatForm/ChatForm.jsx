@@ -1,6 +1,7 @@
 import { StyledChatForm, StyledButtonContainer } from "./styles";
 import { useRef } from "react";
 import { BiSend } from "react-icons/bi";
+import { BiSolidImage } from "react-icons/bi";
 
 const ChatForm = () => {
   const inputRef = useRef(null);
@@ -22,6 +23,7 @@ const ChatForm = () => {
 
   return (
     <StyledChatForm onSubmit={onSubmit}>
+      {/*<BiSolidImage fill="#fff"/>*/}
       <input type="text" placeholder="Escribe un mensage" ref={inputRef} />
 
       <StyledButtonContainer >

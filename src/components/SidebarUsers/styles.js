@@ -1,10 +1,10 @@
 import { Box, styled } from "@mui/material";
 
 export const StyledSidebar = styled(Box)(({ theme }) => ({
-  //backgroundColor:'red',
+  //backgroundColor:'#e5e8e8',
   //borderRadius: '4px',
   //boxShadow: '0 0 9px 2px rgba(8,9,10,.07)',
-  //padding: '0px',
+  padding: '0px',
   //position: 'relative',
   //width: '26.9%',
   //float: 'left',
@@ -20,7 +20,7 @@ export const StyledSidebar = styled(Box)(({ theme }) => ({
   //overflowY: 'scroll',
   //backgroundColor: 'gray',
   //[theme.breakpoints.down('sm')]: {
-  //  height: "auto",
+    //height: "auto",
   //  width: '100%',
   //}
   //overflowY: 'auto',
@@ -40,7 +40,6 @@ export const StyledSidebar = styled(Box)(({ theme }) => ({
   ////left: '90px',
   //color: "white",
   //fontSize: "18px",
-  //zIndex: '',
   //overflow: "hidden",
   //overflowY: "scroll",
 
@@ -51,17 +50,24 @@ export const StyledSidebar = styled(Box)(({ theme }) => ({
   display: "block",
   //position: "relative",
   transition: "color 300ms",
-  height: "90%",
+  //height: "100%",
+  height: "calc(91% - 14px)",
+  //border: '1px solid #d9d8e3',
+
+  border: theme.mode.border,
+
+  borderBottomLeftRadius: '12px',
+
   //background: "#1783db",
   //position: "fixed",
-  top: "90px",
+  //top: "80px",
   //left: "90px",
   //color: "white",
   fontSize: "18px",
-  //zIndex: "",
+  zIndex: "5000px",
   overflow: "hidden",
-  overflowY: "scroll",
-
+  overflowY: "auto",
+  //border: '1px solid #d9d9e3',
   //backgroundColor: theme.mode.background,
   //boxShadow: "rgb(1 5 3 / 25%) 0 0 15px -6px, rgb(0 0 0 / 30%) 0 0 5px -1px",
   //padding: '10px',

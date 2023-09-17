@@ -1,7 +1,7 @@
 import { Box, styled, Paper} from '@mui/material';
 
 export const StyledChatView = styled(Box)(({ theme }) => ({
-  padding: '1px',
+  //padding: '5px',
   width: '100%',
   //marginTop: '0px',
   //overflowY: 'scroll',
@@ -9,9 +9,9 @@ export const StyledChatView = styled(Box)(({ theme }) => ({
   justifyContent: 'space-between',
   //alignItems: 'flex-start',
   flexDirection: 'column',
-  backgroundColor: theme.mode.colorHeader,
+  //backgroundColor: theme.mode.colorHeader,
   //boxShadow: '0 2px 4px 0 rgba(0,0,0,0.20)',
-  borderRadius: '1.2em',
+  //borderRadius: '1.2em',
 
   //[theme.breakpoints.down('sm')]: {
   //  //margin: 1,
@@ -35,13 +35,18 @@ export const StyledChatView = styled(Box)(({ theme }) => ({
 export const StyledChatAppContainer = styled(Box)(({ theme }) => ({
   //borderRadius: '30px'
   //boxShadow: '0 2px 4px 0 rgba(0,0,0,0.20)',
-  
-  padding: '15px',
-  backgroundColor: theme.mode.colorHeader,
+  //backgroundImage: 'url(https://telegram.org/img/tgme/pattern.svg?1)',
+  //padding: '15px',
+  //background: theme.mode.colorHeader,
   overflowY: "auto",
-  flex: 1,
+  //flex: 1,
   flexDirection: 'column',
-  height: '100%',
-  background: '#fff',
+  opacity: '0.8',
+  position: '',
+
+  
+    width: '100%',
+    height: '100%',
+  //background: '#fff',
   //borderRadius: '30px',
 }));
